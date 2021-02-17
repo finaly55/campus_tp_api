@@ -84,7 +84,7 @@ exports.deleteBookById = function (req, res) {
 exports.getBooksByLabel = async (req, res) => {
     db.Book.find({
         $or: [{
-            label: new RegExp(req.params.name, "i")
+            label: new RegExp(req.params.label, "i")
         }
         ]
     },

@@ -32,9 +32,10 @@ db.once('open', function () {
 
 ////////Redirection of the URLs to the corresponding data access file////////
 
-//User
+
 app.use('/books', require('./routes/book'))
 app.use('/authors', require('./routes/author'))
+
 
 
 const port = process.env.PORT || process.env.API_PORT || 3007;

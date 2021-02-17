@@ -11,4 +11,8 @@ router.put('/', bookController.updateBook)
 router.get('/:id', bookController.getBookById)
 router.delete('/:id', bookController.deleteBookById)
 
+// get by label
+router.get('/label/:label', bookController.getBooksByLabel)
+
+
 module.exports = router
