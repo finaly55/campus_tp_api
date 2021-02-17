@@ -38,7 +38,7 @@ app.use('/authors', require('./routes/author'))
 
 
 
-const port = process.env.PORT || process.env.API_PORT || 3007;
+const port = process.env.PORT || 3000
 
 // start of application
 const server = app.listen(port, () => console.log(`Server started on http://localhost:${port}`))
